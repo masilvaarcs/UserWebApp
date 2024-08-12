@@ -12,7 +12,7 @@
 
 ## Requisitos
 - .NET 6.0 ou superior
-- API Python em execução (veja o repositório [SimpleUserOrderAPI]https://github.com/masilvaarcs/SimpleUserOrderAPI)
+- API Python em execução (veja o repositório [SimpleUserOrderAPI] https://github.com/masilvaarcs/SimpleUserOrderAPI)
 
 ## Configuração
 1. Clone este repositório:

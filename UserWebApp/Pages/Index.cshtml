@@ -1,0 +1,29 @@
+﻿@page
+@model UserWebApp.Pages.IndexModel
+
+<h1>Lista de Usuários</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Email</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model.Users)
+        {
+            <tr>
+                <td>@user.Name</td>
+                <td>@user.Email</td>
+                <td>
+                    <a asp-page="/Edit" asp-route-id="@user.UserId">Editar</a> |
+                    <a asp-page="/Delete" asp-route-id="@user.UserId">Excluir</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+<a asp-page="/Create" class="btn btn-primary">Adicionar Novo Usuário</a>

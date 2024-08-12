@@ -1,0 +1,41 @@
+﻿@page "{id:int}"
+@model UserWebApp.Pages.DeleteModel
+
+<h1>Excluir Usuário</h1>
+
+<h3>Tem certeza de que deseja excluir este usuário?</h3>
+<div>
+    <h4>Usuário</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            Nome
+        </dt>
+        <dd class="col-sm-10">
+            @Model.User.Name
+        </dd>
+        <dt class="col-sm-2">
+            Email
+        </dt>
+        <dd class="col-sm-10">
+            @Model.User.Email
+        </dd>
+        <dt class="col-sm-2">
+            Telefone
+        </dt>
+        <dd class="col-sm-10">
+            @Model.User.Phone
+        </dd>
+        <dt class="col-sm-2">
+            Cidade
+        </dt>
+        <dd class="col-sm-10">
+            @Model.User.City
+        </dd>
+    </dl>
+
+    <form method="post">
+        <input type="submit" value="Excluir" class="btn btn-danger" />
+        <a asp-page="/Index" class="btn btn-secondary">Cancelar</a>
+    </form>
+</div>

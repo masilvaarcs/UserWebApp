@@ -12,9 +12,9 @@
 
 ## Requisitos
 - .NET 6.0 ou superior
-- API Python em execução (veja o repositório [UserWebApp]https://github.com/masilvaarcs/UserWebApp)
+- API Python em execução (veja o repositório [SimpleUserOrderAPI]https://github.com/masilvaarcs/SimpleUserOrderAPI)
 
 ## Configuração
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/masilvaarcs/UserWebApp.git
+   git clone https://github.com/masilvaarcs/SimpleUserOrderAPI.git
